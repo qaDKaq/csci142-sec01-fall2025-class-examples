@@ -3,5 +3,6 @@ package shapes;
 import java.awt.Point;
 
 public interface Locatable {
-	Point locate();
+	public abstract Point locate();
+	public void moveTo(int x, int y);
 }
