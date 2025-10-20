@@ -2,7 +2,15 @@ package storage;
 
 import java.util.Vector;
 
-public class VectorStorage<T> implements Storage<T> {
+/**
+ * A storage implementation that uses a Vector to store elements.
+ * 
+ * @param <T> The type of elements to be stored, must extend Number.
+ * 
+ * If I want String or other types as well as Number types, take out
+ * the "extends Number" below
+ */
+public class VectorStorage<T extends Number> implements Storage<T> {
 
 	private Vector<T> data;
 	
